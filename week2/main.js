@@ -56,7 +56,7 @@ function compareVariables(a,b) {
         console.log("Variable " + a + " and " + " variable " + b + " are the same type");
     }
     else {
-        console.log("Variable " + a + " and " + " variable " + b + " are different type");
+        console.log("Variable " + a + " and " + " variable " + b + " are of different type");
     }
 }
 

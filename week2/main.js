@@ -74,7 +74,7 @@ console.log(b4);
 console.log("I believe var b1 is a String");
 console.log("I believe var b2 is a String");
 console.log("I believe var b3 is an integer");
-console.log("I believe var b4 is a integer");
+console.log("I believe var b4 is an integer");
 
 console.log(typeof(b1));
 console.log(typeof(b2));

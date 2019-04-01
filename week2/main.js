@@ -53,7 +53,7 @@ console.log(myString.length);
 
 function compareVariables(a,b) {
     if (typeof a === typeof b) {
-        console.log("Variable " + a + " and " + " variable " + b + " are the same type");
+        console.log("Variable " + a + " and " + " variable " + b + " are of the same type");
     }
     else {
         console.log("Variable " + a + " and " + " variable " + b + " are of different type");

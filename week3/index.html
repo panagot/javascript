@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Conditionals</title>
+    <style>
+        .red,
+        .green,
+        .orange {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .red {
+            background: red;
+        }
+        
+        .green {
+            background: green;
+        }
+        
+        .orange {
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Conditionals</h1>
+    <!--
+    <div class="green"></div>
+    <div class="orange"></div>
+    <div class="red"></div>
+    -->
+
+    <script>
+        // CONDITIONALS: if { ... } else { ... }
+
+        let trafficLight = "red";
+        trafficLight = "orange";
+        // Check with 'green', 'orange', 'blue', etc.
+        if (trafficLight === "red") {
+            document.write("<p class='red'></p>");
+        } else if (trafficLight === "orange") {
+            document.write("<p class='orange'></p>");
+        } else if (trafficLight === "green") {
+            document.write("<p class='green'></p>");
+        } else {
+            document.write("<p>Invalid Color.</p>");
+        }
+    </script>
+    <script>
+        let day;
+        let currentDay = new Date().getDay(); 
+        switch ( currentDay ) {
+        case 0:
+            day = "Κυριακή";
+            break;
+        case 1:
+            day = "Δευτέρα";
+            break;
+        case 2:
+            day = "Τρίτη";
+            break;
+        case 3:
+            day = "Τετάρτη";
+            break;
+        case 4:
+            day = "Πέμπτη";
+            break;
+        case 5:
+            day = "Παρασκευή";
+            break;
+        case  6:
+            day = "Σάββατο";
+        }
+        document.write( "Σήμερα είναι " + day );
+    </script>
+    <script>
+        switch ( currentDay ){
+            case 6:
+            case 0:
+              document.write( "<div>We are closed today.</div>");
+              break;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+              document.write( "<div><strong>We are open today.</strong></div>");
+              break;
+
+        }
+    </script>
+
+    <!-- Home Exercise:
+        - Find out how to get the current Hour
+        - Display we are open if it is 08:00 to 20:00
+        - Display we are closed now if it is outside of the schedule
+    -->
+    <script>
+    
+    let currentHour = new Date().getHours();
+    if (currentHour >= 8 && currentHour < 20 ){
+    document.write("we are open");
+    }
+    else {
+    document.write("we are closed now");
+    }
+    </script>
+
+</body>
+
+</html>

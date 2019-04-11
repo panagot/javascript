@@ -90,7 +90,7 @@ for (var item in arrayOfVehicles) {
     advertismentString += arrayOfVehicles[item] + 's.';
 }
 
-console.log(advertismentString);
+console.log(advertismentString.replace(/./g, " "));
 
 //11
 arrayOfVehicles.push("train");

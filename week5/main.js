@@ -129,4 +129,8 @@ console.log(costForTuesday);
 let accumulateTuesdayCost = costForTuesday.reduce((acc,cur) => acc + cur);
 console.log("Total cost for Tuesday is " , accumulateTuesdayCost, "Euros");
 
+//Total cost for the 2 days
+
+let TotalCost = accumulateMondayCost + accumulateTuesdayCost ;
+console.log("The total cost for the 2 days is", TotalCost, "Euros");
 
